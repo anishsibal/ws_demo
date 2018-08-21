@@ -1,5 +1,5 @@
 #!/bin/bash
-yum -y install git
+yum -y install git python2-pip
 mkdir -p /app/logs
 mkdir /tmp/ws_demo
 git clone https://github.com/anishsibal/ws_demo /tmp/ws_demo
