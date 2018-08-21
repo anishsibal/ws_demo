@@ -1,4 +1,4 @@
-resource "oci_core_instance" "saltMaster" {
+resource "oci_core_instance" "ws_demo-1" {
   #Required
   availability_domain = "${var.availability_domain}"
   compartment_id = "${var.compartment_ocid}"
