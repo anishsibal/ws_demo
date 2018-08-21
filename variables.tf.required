@@ -1,0 +1,27 @@
+// Connection variables
+variable "tenancy_ocid" {
+  default = "<ADD_TENANCY_OCID>"
+}
+variable "compartment_ocid" {
+  default = "<ADD_COMARTMENT_OCID>"
+}
+variable "availability_domain" {default = "HFRe:US-ASHBURN-AD-3"}
+variable "region" { default = "us-ashburn-1" }
+variable "fingerprint" { default = "<API_FINGERPRINT>" }
+variable "private_key_path" { default = "<PRIVATE_KEY_PATH>"}
+variable "ssh_authorized_keys" {
+  default = "<SSH_PUBLIC_KEY>"
+}
+variable "user_ocid" {
+  default = "<USER_OCID>"
+}
+variable "instance_shape" { default = "VM.Standard1.2"}
+variable "subnet_ocid" {
+  default = "<SUBNET_OCID>"
+}
+variable "image_ocid" {
+  default = "<OS_IMAGE_OCID>"
+}
+variable "BootStrapFile" {
+  default = "./userdata/bootstrap"
+}

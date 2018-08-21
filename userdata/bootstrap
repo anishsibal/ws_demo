@@ -6,13 +6,19 @@ git clone https://github.com/anishsibal/ws_demo /tmp/ws_demo
 cp /tmp/ws_demo/app/app.py /app/
 rm -rf /tmp/ws_demo
 
-# OPen port 80
-firewall-cmd --zone=public --add-port=80/tcp --permanent
-firewall-cmd --reload
-
 #Install flask
 pip install flask
 
 # Start flask app
 cd /app
 python app.py >> logs/app.log 2>&1 &
+
+# OPen port 80
+function firewalld-80() {
+setenforce 0
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --reload
+setenforce 1
+}
+
+firewalld-80
