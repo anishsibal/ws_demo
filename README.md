@@ -41,3 +41,11 @@ The output of terraform apply, will show the Public address as well.
 
 You can go to public ip address , and it will show the json output with Site uptime and client IP visit tracking.
 
+You can also run curl command on ip address, e.g.:
+```
+$ curl 129.213.130.114
+{"IPs":{"104.192.200.117":1,"24.27.53.151":5},"siteUpSince":"Tue, 21 Aug 2018 20:07:09 GMT"}
+$ curl 129.213.130.114
+{"IPs":{"104.192.200.117":1,"24.27.53.151":6},"siteUpSince":"Tue, 21 Aug 2018 20:07:09 GMT"}
+$
+```
