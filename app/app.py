@@ -5,11 +5,9 @@ from flask import request
 import datetime
 app = Flask(__name__)
 now = datetime.datetime.now()
-print(now)
 data = {}
 data['siteUpSince'] = now
 data['IPs'] = {}
-print(now)
 @app.route('/')
 def uptimeAndIps():
     ip = request.remote_addr
