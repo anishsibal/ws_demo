@@ -21,3 +21,4 @@ resource "oci_core_instance" "saltMaster" {
 
 	}
 }
+
