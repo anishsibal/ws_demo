@@ -50,3 +50,35 @@ $ curl 129.213.130.114
 $
 ```
 
+### Manual Setup wihtout using Oracle Cloud Infra
+
+Install python 2.x, pip and git on your machine
+
+Install flask as root or using sudo
+```
+pip install flask
+```
+Clone repo as root or sudo
+```
+mkdir -p /ws_demo
+cd /ws_demo
+git clone https://github.com/anishsibal/ws_demo .
+```
+Create log dir 
+```
+mkdir -p /var/log/ws_demo
+```
+
+Start flask app
+```
+cd /ws_demo/app
+python app.py >> /var/log/ws_demo/app.log 2>&1 &
+```
+
+NOTE: If machines on network need to access the app server, port 80 needs to be opened on the local machine
+
+Testing on local machine
+```
+curl http://127.0.0.1
+````
+```
