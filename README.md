@@ -52,13 +52,13 @@ $
 
 ### Manual Setup wihtout using Oracle Cloud Infra
 
-Install python 2.x, pip and git on your machine
+Install python 2.x, pip and git on your machine. Perform below tasks as root or sudo
 
-Install flask as root or using sudo
+Install flask 
 ```
 pip install flask
 ```
-Clone repo as root or sudo
+Clone repo 
 ```
 mkdir -p /ws_demo
 cd /ws_demo
