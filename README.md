@@ -36,7 +36,7 @@ terraform init .
 terraform apply .
 ```
 
-Once the above is run, the cloud init bootstrap will start the flask server with app /app.py.
+Once the above is run, the cloud init bootstrap will start the flask server app.
 The output of terraform apply, will show the Public address as well. 
 
 You can go to public ip address , and it will show the json output with Site uptime and client IP visit tracking.
