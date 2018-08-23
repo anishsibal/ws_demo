@@ -80,5 +80,4 @@ NOTE: If machines on network need to access the app server, port 80 needs to be 
 Testing on local machine
 ```
 curl http://127.0.0.1
-````
 ```
